@@ -1,0 +1,89 @@
+/* src/pages/Home.css */
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #121212;
+}
+
+.home-page {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.intro-banner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro-banner h1 {
+  font-size: 2.5rem;
+  color: #1db954;
+  margin-bottom: 10px;
+}
+
+.intro-banner p {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+}
+
+.explore-title {
+  color: #1db954; /* Verde característico de Spotify */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.genre-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.genre-card {
+  background-color: #282828;
+  border: none;
+  width: 200px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.genre-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.genre-image {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.genre-card-body {
+  padding: 15px;
+}
+
+.genre-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.genre-button {
+  background-color: #1db954;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.genre-button:hover {
+  background-color: #1ed760;
+}

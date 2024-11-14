@@ -1,0 +1,191 @@
+/* Estilos generales */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    color: #1f1f1f;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #212529;
+  }
+  
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #ffffff !important;
+  }
+  
+  .navbar-brand:hover,
+  .navbar-nav .nav-link:hover {
+    color: #d4af37 !important; /* Dorado para resaltar */
+  }
+  
+  /* Página Home */
+  .genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .genre-list .card {
+    transition: transform 0.2s ease;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .genre-list .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .genre-list .card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .genre-list .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Página de Género */
+  .artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .artist-list .card {
+    width: 18rem;
+    transition: transform 0.2s ease;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .artist-list .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artist-list .card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .artist-list .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Página de Artista */
+  .album-card {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .album-card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 180px;
+    object-fit: cover;
+  }
+  
+  .album-card .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #212529;
+  }
+  
+  .album-card .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  .album-card .list-group-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Reproductor */
+  .player {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+  
+  .player h5 {
+    margin-bottom: 1rem;
+  }
+  
+  .controls button {
+    color: #ffffff;
+    margin: 0 10px;
+  }
+  
+  .progress-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  .progress-slider {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .time {
+    font-size: 0.9rem;
+    color: #adb5bd;
+  }
+  
+  /* Página de Resultados de Búsqueda */
+  .search-results-page h2 {
+    text-align: center;
+  }
+  
+  .search-results-page .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-results-page .list-group-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Ajustes Responsivos */
+  @media (max-width: 768px) {
+    .genre-list .card,
+    .artist-list .card {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+  
